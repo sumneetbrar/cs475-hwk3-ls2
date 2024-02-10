@@ -3,15 +3,13 @@
 
 #include "stack.h"
 
-#define TRUE 1
-#define FALSE 0
+#define MAX 2048
 #define INDENT "    "
 
-// TODO: Any global variables go below
-int thisIsGlobal = 10;  // delete before submission
-
-// TODO: Function declarations go below
-void example(int*); // delete before submission
-
+// Declare the functions
+void printDir(char* path, int depth);
+void printModDir(char *path, char *match, int depth);
+void output(stack_t *s);
+char* pTs(void* ptr);
 
 #endif
