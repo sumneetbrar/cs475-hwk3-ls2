@@ -106,7 +106,7 @@ void printModDir(char *path, char *match, int depth)
     struct dirent *returnVal; // to store readdir()'s output
     struct stat fstat;        // store file attributes
 
-    if (!dir) // make sure the directory exists / is valid
+    if (!dir) // make sure the directory exists/is valid
     {
         fprintf(stderr, "Error opening directory, %s\n", path);
         return;
